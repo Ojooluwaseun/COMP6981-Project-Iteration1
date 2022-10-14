@@ -1,0 +1,30 @@
+id,vin,price,miles,stock_no,year,make,model,trim,body_type,vehicle_type,drivetrain,transmission,fuel_type,engine_size,engine_block,seller_name,street,city,state,zip
+b39ea795-eca9,19UNC1B01HY800062,179999,9966,V-P4139,,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,edmundston honda,475 Rue Victoria,Edmundston,NB,E3V 2K7
+026cb5b1-6e3e,19UNC1B02HY800023,179995,5988,PPAP70374,,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,garage daniel lessard,2795 Route-du-prsident-kennedy,Notre-dame-des-pins,QC,G0M 1K0
+5cd5d5b2-5cc2,19UNC1B02HY800071,168528,24242,B21085,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,lougheed acura,1388 Lougheed Highway,Coquitlam,BC,V3K 6S4
+b32473ed-5922,19UNC1B02LY800001,220000,6637,AP5333,2020,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,drive autogroup,1305 Parkway Suite 600,Pickering,ON,L1V 3P2
+ac40c9fc-0676,19UNC1B02LY800001,220000,6637,AP5333,,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,acura pickering,575 Kingston Road,Pickering,ON,L1V 3N7
+0487af07-893c,19UNC1B03HY800063,155771,18281,U02856,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,gravel auto crdit,102-1007 Boulevard Ren Lvesque Verdun,Montral,QC,H3E 0H1
+b872c7c9-27cd,19UNC1B03HY800063,155771,18281,U02856,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,gravel auto | used car center,1007 Boulevard Ren Lvesque #105 Verdun,Montral,QC,H3E 0H1
+87d61ee5-d1c9,19UNC1B03HY800063,155771,18281,U02856,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,gravel acura,5625 Boulevard Mtropolitain Est Saint-lonard,Montral,QC,H1P 1X3
+e39410c3-ef41,19UNC1B03HY800080,169998,17207,UC6386A,,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,woodbine chrysler ltd,8280 Woodbine Avenue,Markham,ON,L3R 2N8
+19549afd-1a64,19UNC1B04LY800016,205000,579,200404,2020,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,acura of hamilton,1515 Upper James Street,Hamilton,ON,L9B 1K2
+9bff56cb-9e20,19UNC1B05LY800011,198900,3836,CONS,2020,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,acura plus,255 Boulevard De La Seigneurie Ouest,Blainville,QC,J7C 4N3
+e190cc9a-1062,19UNC1B07HY800115,174900,24510,P7172,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,chambly honda,850 Boulevard De Prigny,Chambly,QC,J3L 1W3
+031632fa-66c6,19UNC1B08HY800043,178888,13500,2017NSXWHITE,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,northwest acura,125 Crowfoot Way Northwest,Calgary,AB,T3G 2R2
+5c56c5d4-9755,19UNC1B08HY800043,178888,13500,2017NSXWHITE,,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,hyatt automotive group,909 - 15th Street Southwest,Calgary,AB,T3C 1E5
+9094ac45-009e,19UNC1B08HY800043,178888,13500,2017NSXWHITE,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,hyatt automotive group,161 Glendeer Circle Sw,Calgary,AB,T2H 2S8
+79d4a6a9-c265,19UNC1B0XHY800061,,12864,MU2483,2017,Acura,NSX,Base,Coupe,Car,4WD,Automatic,Electric / Premium Unleaded,3.5,V,pfaff leasing calgary,5539 6th Street Se,Calgary,AB,T2H 1L6
+a7b53aaa-ae99,1B3LC56R18N652133,3499,174850,,,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,carview motor,1113 Finch Ave W,North York,ON,M3J 2E5
+acdf10ba-fa76,1B3LC56R18N660054,5200,89124,215140,,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,strickland's brantford chevrolet buick gmc cadillac,19-21 Lynden Road,Brantford,ON,N3R 8B8
+3ec82d01-aec0,1B3LC56R38N195597,4789,151745,30479,,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,dale wurfel chrysler dodge jeep ltd.,28478 Centre Road,Strathroy,ON,N7G 3J2
+19cab0ff-35f0,1B3LC56R58N274804,4601,252955,KH6268B,2008,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,medicine hat toyota,1400 Strachan Road Southeast,Medicine Hat,AB,T1B 4V2
+d128f381-0f23,1B3LC56R88N566740,5995,176631,2008DAVGWHT,2008,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,first edmonton auto,8303 118 Avenue Northwest,Edmonton,AB,T5B 0S4
+bcd6cd07-d086,1B3LC56R98N584325,,239884,95169,,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,financement autos,4455 Boulevard Saint-martin Ouest,Laval,QC,H7T 1C6
+75ade571-30a6,1B3LC56R98N584325,2950,239884,95169,2008,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,auto shelby,344 Boulevard Cur-labelle,Laval,QC,H7V 2S1
+b241c836-6a57,1B3LC56RX8N684885,1500,254113,,2008,Dodge,Avenger,SXT,Sedan,Car,FWD,Automatic,E85,2.7,V,rural route motors,6528 Simcoe County Road 27,Thornton,ON,L0L 2N2
+6a88647d-ff1a,1C3BC8EG0BN617610,10995,,11024-21,,Chrysler,200,S,Convertible,Car,FWD,Automatic,E85,3.6,V,western auto sales,302 Algonquin Boulevard West,Timmins,ON,P4N 2S1
+072f8e65-1a4e,1C3BC8FG0BN584106,6991,105060,2M060(59),2011,Chrysler,200,S,Sedan,Car,FWD,Automatic,E85,3.6,V,formule subaru inc,"175, Rue Sainte-anne",Rimouski,QC,G5L 4H2
+2087023a-8adc,1C3BC8FG0BN584106,6991,105060,2M060(59),2011,Chrysler,200,S,Sedan,Car,FWD,Automatic,E85,3.6,V,formule kia,"167, Boulevard Sainte-anne",Rimouski,QC,G5M 1C3
+cb7dfce4-152d,1C3BC8FG0BN584106,6991,105060,2M060(59),,Chrysler,200,S,Sedan,Car,FWD,Automatic,E85,3.6,V,formule mazda,169 Boulevard Sainte-anne,Rimouski,QC,G5M 1C3
+4932a22c-4db7,1C3BC8FG9BN603123,6705,164708,3123T,,Chrysler,200,S,Sedan,Car,FWD,Automatic,E85,3.6,V,teka cars,6 Cushman Road,St. Catharines,ON,L2M 6S8
