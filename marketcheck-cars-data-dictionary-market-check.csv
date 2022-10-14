@@ -1,0 +1,109 @@
+Field,Active Feed Format,History Feed Format,Length,Source,Description,Available Since
+id,string,string,36,MC Generated,This is a GUID and unique in the feed. In History feed VIN number is prefixed,Jan 15
+vin,string,string,17,MC Scraped,17 char long VIN of the car,Jan 15
+heading,string,string,256,MC Scraped,The car heading as listed on the inventory page of the dealer website,Jan 15
+more_info,string,string,1024,MC Scraped,The listing details page url,Jan 15
+price,number,number,12,MC Scraped,The car price as listed on the website,Jan 15
+msrp,number,number,12,MC Scraped,The car retail price as listed on the website,Jan 15
+miles,number,number,12,MC Scraped,The car miles/odometer as listed on the website,Jan 15
+stock_no,string,string,32,MC Scraped,Stock number of the car listed on the website,Jan 15
+year,number,number,4,VIN Decoder,Model Year of the car (VIN Decoded),Jan 15
+make,string,string,32,VIN Decoder,Make of the car (VIN Decoded),Jan 15
+model,string,string,256,VIN Decoder,Model of the car (VIN Decoded),Jan 15
+trim,string,string,256,VIN Decoder,Trim of the car (VIN Decoded),Jan 15
+vehicle_type,string,string,64,VIN Decoder,Vehicle type of the car (VIN Decoded),Jan 15
+body_type,string,string,64,VIN Decoder,Body type of the car (VIN Decoded),Jan 15
+body_subtype,string,string,64,VIN Decoder,Body subtype of the car (VIN Decoded),Jan 15
+drivetrain,string,string,64,VIN Decoder,Drivetrain of the car (VIN Decoded),Jan 15
+fuel_type,string,string,64,VIN Decoder,Fuel type of the car (VIN Decoded),Jan 15
+engine,string,string,64,VIN Decoder,Engine of the car (VIN Decoded),Jan 15
+engine_block,string,string,8,VIN Decoder,Engine block of the car (VIN Decoded),Jan 15
+engine_size,string,string,16,VIN Decoder,Engine size of the car (VIN Decoded),Jan 15
+engine_measure,string,string,32,VIN Decoder,Engine measure of the car - Values are null as not available with EPI Analytics decoder,Jan 15
+engine_aspiration,string,string,32,VIN Decoder,Engine aspiration of the car - Values are null as not available with EPI Analytics decoder,Jan 15
+transmission,string,string,32,VIN Decoder,Transmission of the car (VIN Decoded),Jan 15
+speeds,number,number,5,VIN Decoder,Speeds of the car - Values are null as not available with EPI Analytics decoder,Jan 15
+doors,number,number,5,VIN Decoder,Doors of the car (VIN Decoded),Jan 15
+cylinders,string,string,5,VIN Decoder,Cylinders of the car (VIN Decoded),Jan 15
+city_mpg,number,number,8,VIN Decoder,City miles per gallon (VIN Decoded),Jan 15
+highway_mpg,number,number,8,VIN Decoder,Highway miles per gallon (VIN Decoded),Jan 15
+interior_color,string,string,64,MC Scraped,The interior color of the car,Jan 15
+exterior_color,string,string,64,MC Scraped,The exterior color of the car,Jan 15
+base_exterior_color,string,string,64,MC Calculated,"Basic normalised color calculated from exterior color. E.g. Metallic black exterior is saved as Black in this field. Possible values in this field are Gray, Green, Gold, Blue, Brown, Purple, Red, Black, White, Pink, Orange, Yellow, Silver and Beige",Jan 18
+base_interior_color,string,string,64,MC Calculated,"Basic normalised color calculated from interior color. E.g. Metallic black interior is saved as Black in this field Possible values in this field are Gray, Green, Gold, Blue, Brown, Purple, Red, Black, White, Pink, Orange, Yellow, Silver and Beige",Jan 18
+is_certified,number,number,5,MC Scraped,"Flag indicating whether its a certified car. The flag is set to 1 when we find the keyword ""certified"" somewhere in the listings heading or it's description. We set this flag 0 otherwise. 
+
+1 indicates its a certified car 
+0 indicates its not a certified car",Jan 15
+is_transfer,number,number,5,MC Scraped,"This field is populated only when the dealer location differs from the car location. The flag is set to 1 when we find the keyword ""transfer"" somewhere in the listings description. We set this flag 0 otherwise. 
+
+1 indicates transfer option is available on the car
+0 indicates transfer option is not available on this car",April 18
+taxonomy_vin,string,string,10,MC Calculated,This is a squish VIN obtained from 17 character VIN by selecting first 8 letters appended with 10th and 11th character,Jan 15
+model_code,string,string,24,MC Scraped,Model code of the car listed on the website,April 18
+*scraped_at,string (YYYY-MM-DDTHH:MM:SSZ),timestamp,32,MC Calculated,This is the time when the listing was scraped for the first time. This value is retained even if the listing has an update in the subsequent scraping cycles. The time period between scraped_at and status_date is the duration for which the source website has not done any significant (+-10%) change in either price or miles. Please use the reference links given at the bottom of this table for more information.,Jan 15
+*status_date,string (YYYY-MM-DDTHH:MM:SSZ),timestamp,32,MC Calculated,The last seen at time. Please use the reference links given at the bottom of this table for more information.,Jan 15
+*first_scraped_at,string (YYYY-MM-DDTHH:MM:SSZ),timestamp,32,MC Calculated,"This time is the oldest scraped_at date for the car with respect to the Marketcheck historical database. This is a Car or VIN Level attribute and hence will only be elevated to and made available with the most recent listing of the car. For a car which was introduced in Marketcheck database for the very first time and is still active, this field has a null value.",Jan 15
+dealer_id,number,number,32,MC Generated,Marketcheck Dealer id,Jan 15
+source,string,string,256,MC Scraped,Website domain,Jan 15
+seller_name,string,string,512,MC Scraped,Dealer Name,Jan 15
+street,string,string,512,MC Scraped,Dealer location fields,Jan 15
+city,string,string,128,MC Scraped,,Jan 15
+state,string,string,128,MC Scraped,,Jan 15
+zip,string,string,10,MC Scraped,,Jan 15
+latitude,decimal number,decimal number,8,MC Calculated,,Jan 15
+longitude,decimal number,decimal number,8,MC Calculated,,Jan 15
+country,string,string,2,MC Scraped,,Jan 16
+seller_phone,string,string,256,MC Scraped,Comma separated list of phone numbers of the dealer,Jan 15
+seller_email,string,string,256,MC Scraped,Email of the dealer,Jan 15
+seller_type,string,string,32,MC Calculated,It takes any one of these values dealer / fsbo / auction,Jan 15
+listing_type,string,string,32,MC Calculated,It takes any one of these values dealer / fsbo / auction,Jan 15
+inventory_type,string,string,16,MC Calculated,It takes any one of these values used / new,Jan 15
+dealer_type,string,string,32,MC Calculated,It takes any one of these values franchise / independent,Aug 18
+car_seller_name,string,string,512,MC Scraped,Name of the dealer who has the Car available in his lot,Jan 16
+car_address,string,string,512,MC Scraped,Car location fields - these will be populated only when the dealer location differs from the car location. This may mean the dealer has a transfer option for the car.,Jan 16
+car_street,string,string,512,MC Scraped,,Jan 16
+car_city,string,string,128,MC Scraped,,Jan 16
+car_state,string,string,128,MC Scraped,,Jan 16
+car_zip,string,string,128,MC Scraped,,Jan 16
+car_latitude,decimal number,decimal number,8,MC Calculated,,Jan 16
+car_longitude,decimal number,decimal number,8,MC Calculated,,Jan 16
+seller_comments,string,string,variable length text,MC Scraped,Dealer comments as listed on details page,Jan 15
+options,string,string,variable length text,MC Scraped,Pipe separated list of options found on details page,Jan 15
+features,string,string,variable length text,MC Scraped,Pipe separated list of features found on details page,Jan 15
+photo_links,string,string,variable length text,MC Scraped,Pipe separated list of photo links found on details page of the car,Jan 15
+photo_url,string,string,1024,MC Scraped,Main photo url found on details page of the car,Jan 15
+**dom,number,number,5,MC Calculated,The total days on market of the car. The DOM of a car is a sum of all days the car is reported online by all its online sources (i.e. the combined period between scraped_at and status_date) with the overlapping periods considered only ones. Please use the reference links given at the bottom of this table for more information.,Jan 15
+**dom_180,number,number,5,MC Calculated,The sum of the days on market of the Car considering only the last 6 months. Please use the reference links given at the bottom of this table for more information.,Jan 18
+**dom_active,number,number,5,MC Calculated,The sum of the days on market of the Car considering only the last 30 days period. Please use the reference links given at the bottom of this table for more information.,Jan 18
+currency_indicator,string,string,32,MC Calculated,Currency unit. It is USD for US listings and CAD for Canadian listings,March 18
+miles_indicator,string,string,32,MC Calculated,Mileage unit. It is MILES for US listings and KILOMETERS for Canadian listings,March 18
+carfax_1_owner,number,number,5,MC Scraped,"Flag indicating whether the listings has a Carfax one owner flag. The flag is set to 1 when we find the keyword ""carfax one owner"" somewhere in the listings description. We set this flag 0 otherwise. 
+
+1 indicates the listings has a Carfax one owner flag
+0 indicates the listings does not highligths a Carfax one owner flag",April 18
+carfax_clean_title,number,number,5,MC Scraped,"Flag indicating whether the listings has a Carfax clean title flag. The flag is set to 1 when we find the keyword ""carfax clean title"" somewhere in the listings description. We set this flag 0 otherwise. 
+
+1 indicates the listings has a Carfax clean title flag
+0 indicates the listings does not highligths a Carfax clean title flag",April 18
+loan_term,number,number,5,MC Scraped,Car finance term in months as listed on details page,May 18
+loan_apr,decimal number,decimal number,5,MC Scraped,Car finance annual percentage rate value as listed on details page,May 18
+l_down_pay,number,number,5,MC Scraped,Car lease down payment value as listed on details page,May 18
+l_emi,number,number,5,MC Scraped,Car lease monthly payment value as listed on details page,May 18
+f_down_pay,decimal number,decimal number,8,MC Scraped,Car finance down payment value as listed on details page,May 18
+f_down_pay_per,number,number,5,MC Scraped,Car finance down payment value in percentage as listed on details page,May 18
+f_emi,number,number,5,MC Scraped,Car finance monthly payment value as listed on details page,May 18
+lease_term,number,number,5,MC Scraped,Car lease term value per month as listed on details page,May 18
+in_transit,number,number,1,MC Scraped,"Flag indicating whether its a in_transit car. The flag is set to 1 when we find the keyword ""in_transit"" somewhere in the listings heading or it's description. We set this flag 0 otherwise. 
+
+1 indicates its a in_transit car 
+0 indicates its not a in_transit car",December 21
+in_transit_days,number,number,5,MC Calculated,It will give the no. of days the listing/VIN is in transit on that source,March 22
+in_transit_at,string (YYYY-MM-DDTHH:MM:SSZ),timestamp,32,MC Calculated,It will be a timestamp. It will indicate from when the particular VIN is in transit for that specific source,March 22
+"
+* References that explain various date fields:
+https://storage.googleapis.com/marketcheck-sample-feeds/dates_in_mc_feed.pptx  
+https://medium.com/marketcheck-apis/marketcheck-api-listing-dates-explained-ec67477ee800",,,,,,
+"
+** Reference that explains DOM fields and how those are calculated:
+https://storage.googleapis.com/marketcheck-sample-feeds/Days_on_Market(DOM).pptx",,,,,,
